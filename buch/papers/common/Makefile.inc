@@ -23,6 +23,8 @@ PAPERFILES = \
 	papers/venn/main.tex \
 	papers/weyl/main.tex \
 	papers/zeta/main.tex \
+	papers/bessel/main.tex \
+	papers/buchberger/main.tex \
 	
 $(workdir)/buch1-blx.bbl:	$(workdir)/buch1-blx.aux
 	cd $(workdir); bibtex buch1-blx
@@ -115,10 +117,22 @@ $(workdir)/$(seminar)15-blx.bbl:	$(workdir)/$(seminar)15-blx.aux
 	cd $(workdir); bibtex $(seminar)15-blx
 
 $(workdir)/buch16-blx.bbl:	$(workdir)/buch16-blx.aux
-	cd $(workdir) bibtex buch16-blx
+	cd $(workdir); bibtex buch16-blx
 
 $(workdir)/$(seminar)16-blx.bbl:	$(workdir)/$(seminar)16-blx.aux
-	cd $(workdir) bibtex $(seminar)16-blx
+	cd $(workdir); bibtex $(seminar)16-blx
+
+$(workdir)/buch17-blx.bbl:	$(workdir)/buch17-blx.aux
+	cd $(workdir); bibtex buch17-blx
+
+$(workdir)/$(seminar)17-blx.bbl:	$(workdir)/$(seminar)17-blx.aux
+	cd $(workdir); bibtex $(seminar)17-blx
+
+$(workdir)/buch18-blx.bbl:	$(workdir)/buch18-blx.aux
+	cd $(workdir) bibtex buch18-blx
+
+$(workdir)/$(seminar)18-blx.bbl:	$(workdir)/$(seminar)18-blx.aux
+	cd $(workdir) bibtex $(seminar)18-blx
 
 BLXFILES = $(workdir)/buch.bbl \
 	$(workdir)/buch1-blx.bbl \
@@ -137,6 +151,8 @@ BLXFILES = $(workdir)/buch.bbl \
 	$(workdir)/buch14-blx.bbl \
 	$(workdir)/buch15-blx.bbl \
 	$(workdir)/buch16-blx.bbl \
+	$(workdir)/buch17-blx.bbl \
+	$(workdir)/buch18-blx.bbl \
 
 
 SBLXFILES = $(workdir)/$(seminar).bbl\
@@ -156,6 +172,8 @@ SBLXFILES = $(workdir)/$(seminar).bbl\
 	$(workdir)/$(seminar)14-blx.bbl \
 	$(workdir)/$(seminar)15-blx.bbl \
 	$(workdir)/$(seminar)16-blx.bbl \
+	$(workdir)/$(seminar)17-blx.bbl \
+	$(workdir)/$(seminar)18-blx.bbl \
 
 
 PAPER_DIRECTORIES = \
@@ -174,6 +192,8 @@ PAPER_DIRECTORIES = \
 	venn \
 	weyl \
 	zeta \
+	bessel \
+	buchberger \
 	
 PAPER_MAKEFILEINC = \
 	papers/aircraft/Makefile.inc \
@@ -191,4 +211,6 @@ PAPER_MAKEFILEINC = \
 	papers/venn/Makefile.inc \
 	papers/weyl/Makefile.inc \
 	papers/zeta/Makefile.inc \
+	papers/bessel/Makefile.inc \
+	papers/buchberger/Makefile.inc \
 	

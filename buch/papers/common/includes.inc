@@ -13,6 +13,8 @@ include papers/qa/Makefile.inc
 include papers/venn/Makefile.inc
 include papers/weyl/Makefile.inc
 include papers/zeta/Makefile.inc
+include papers/bessel/Makefile.inc
+include papers/buchberger/Makefile.inc
 
 TEXFILES = \
 	$(dependencies-aircraft) \
@@ -30,4 +32,6 @@ TEXFILES = \
 	$(dependencies-venn) \
 	$(dependencies-weyl) \
 	$(dependencies-zeta) \
+	$(dependencies-bessel) \
+	$(dependencies-buchberger) \
 
