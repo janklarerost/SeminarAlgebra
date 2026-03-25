@@ -6,38 +6,24 @@
 % !TEX root = ../../buch.tex
 % !TEX encoding = UTF-8
 %
-\section{Teil 2 
-\label{kepler:section:teil2}}
-\kopfrechts{Teil 2}
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-quae ab illo inventore veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-velit, sed quia non numquam eius modi tempora incidunt ut labore
-et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-pariatur?
+\subsection{Mathematische Vertiefung: Die komplexe Konturintegration
+    \label{kepler:subsection:komplexe_integration}}
 
-\subsection{De finibus bonorum et malorum
-\label{kepler:subsection:bonorum}}
-At vero eos et accusamus et iusto odio dignissimos ducimus qui
-blanditiis praesentium voluptatum deleniti atque corrupti quos
-dolores et quas molestias excepturi sint occaecati cupiditate non
-provident, similique sunt in culpa qui officia deserunt mollitia
-animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-est et expedita distinctio. Nam libero tempore, cum soluta nobis
-est eligendi optio cumque nihil impedit quo minus id quod maxime
-placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-repellendus. Temporibus autem quibusdam et aut officiis debitis aut
-rerum necessitatibus saepe eveniet ut et voluptates repudiandae
-sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-consequatur aut perferendis doloribus asperiores repellat.
-
+Bei der rigorosen analytischen Berechnung der Umlaufzeit für eine elliptische Bahn stösst man zwangsläufig auf ein spezifisches trigonometrisches Integral \cite{nahin2010}.
+Dieses Integral für Umlaufbahnen mit der Exzentrizität \(E\) lautet
+\begin{equation}
+    \int_{0}^{2\pi} \frac{d\theta}{(1+E \cos(\theta))^2} = \frac{2\pi}{(1-E^2)^{3/2}} .
+    \label{kepler:equation:umlauf_integral}
+\end{equation}
+Um dieses zunächst anspruchsvolle reelle Integral zu lösen, bietet sich ein eleganter Weg über die Transformation in die komplexe Ebene an \cite{nahin2010}.
+Man substituiert die Integrationsvariable mit Hilfe der eulerschen Identität durch eine komplexe Zahl \(z = e^{i\theta}\), woraus direkt \(dz = iz d\theta\) folgt \cite{nahin2010}.
+Die reelle Cosinus-Funktion lässt sich daraufhin algebraisch als
+\begin{equation}
+    \cos(\theta) = \frac{z + \frac{1}{z}}{2}
+    \label{kepler:equation:cosinus_komplex}
+\end{equation}
+ausdrücken \cite{nahin2010}.
+Durch diese Substitution wird das ursprüngliche reelle Integral zu einem Konturintegral entlang des Einheitskreises in der komplexen Ebene \cite{nahin2010}.
+Der umgeformte komplexe Integrand besitzt dabei Singularitäten beziehungsweise Polstellen zweiter Ordnung \cite{nahin2010}.
+Mit Hilfe der \emph{cauchyschen Integralformel} für Ableitungen lässt sich das Integral schliesslich exakt auswerten und liefert exakt den Ausdruck auf der rechten Seite von Gleichung \eqref{kepler:equation:umlauf_integral} \cite{nahin2010}.
 
