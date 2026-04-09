@@ -1,0 +1,67 @@
+
+\subsection{Einfache Herleitung}
+Bevor wir uns an die komplexe Herleitung für elliptische Bahnen wagen, betrachten wir den vereinfachten Spezialfall.
+Wir nehmen an, der Planet bewege sich auf einer perfekten Kreisbahn um die Sonne.
+In diesem Fall entspricht die grosse Halbachse $a$ exakt dem konstanten Radius $r$ der Kreisbahn.
+
+Für eine stabile Kreisbahn muss ein Kräftegleichgewicht herrschen.
+Die Gravitationskraft $F_G$, die zwischen der Sonne (Masse $M$) und dem Planeten (Masse $m$) wirkt, fungiert hierbei als die benötigte Zentripetalkraft $F_Z$.
+Diese Kraft zwingt den Planeten auf seine Kreisbahn.
+
+Die Gravitationskraft nach Newton lautet:
+
+\begin{equation}
+    F_G
+    = G \frac{m \cdot M}{r^2}
+\end{equation}
+
+Hierbei steht $G$ für die universelle Gravitationskonstante.
+Die Zentripetalkraft für einen Körper auf einer Kreisbahn berechnet sich durch:
+
+\begin{equation}
+    F_Z
+    = m \frac{v^2}{r}
+    = m \omega^2 r
+\end{equation}
+
+Wir ersetzen nun die Winkelgeschwindigkeit $\omega$ durch den Ausdruck $\frac{2\pi}{T}$, wobei $T$ die Umlaufzeit des Planeten ist.
+Dadurch lässt sich die Zentripetalkraft folgendermassen umschreiben:
+
+\begin{equation}
+    F_Z
+    = m \frac{4\pi^2}{T^2} r
+\end{equation}
+
+Im nächsten Schritt setzen wir die Zentripetalkraft mit der Gravitationskraft gleich ($F_Z = F_G$):
+
+\begin{equation}
+    m \frac{4\pi^2}{T^2} r
+    = G \frac{m \cdot M}{r^2}
+\end{equation}
+
+Die Masse des Planeten $m$ kann auf beiden Seiten der Gleichung gekürzt werden.
+Anschliessend formen wir die Gleichung um.
+Wir sortieren die Terme so, dass die Quadrate der Umlaufzeiten ($T^2$) und die Kuben der Radien ($r^3$) gemeinsam auf einer Seite stehen:
+
+\begin{align}
+    \frac{4\pi^2}{T^2} r
+     & = G \frac{M}{r^2}
+    \\
+    \frac{4\pi^2}{G \cdot M}
+     & = \frac{T^2}{r^3}
+\end{align}
+
+Wir erhalten als Resultat dieser Umformung:
+
+\begin{equation}
+    \frac{T^2}{r^3}
+    = \frac{4\pi^2}{G \cdot M}
+    = \text{konst.}
+\end{equation}
+
+Dies ist das \textbf{dritte Keplersche Gesetz} für Kreisbahnen.
+Es besagt, dass der Quotient aus dem Quadrat der Umlaufzeit und der dritten Potenz des Bahnradius für alle Planeten eines Zentralgestirns eine Konstante ergibt.
+
+Obwohl diese Herleitung mathematisch sehr verständlich ist, gilt sie nur für perfekte Kreise.
+Da Planetenbahnen in der Realität Ellipsen sind, ist für einen exakten physikalischen Beweis ein allgemeinerer Ansatz notwendig.
+Dieser wird im folgenden Kapitel vorgestellt.
