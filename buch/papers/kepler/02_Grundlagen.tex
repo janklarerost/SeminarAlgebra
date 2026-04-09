@@ -34,7 +34,7 @@ Die physikalische Ursache des Flächensatzes ist die \textbf{Drehimpulserhaltung
 \begin{enumerate}
     \item \textbf{Zentralkraft und Hebelarm:} Die Gravitationskraft $\vec{F}$ der Sonne wirkt stets entlang der Verbindungslinie zwischen Sonne und Planet. Da die Kraftwirkungslinie somit direkt durch das Drehzentrum verläuft, ist der \textbf{Hebelarm Null}.
     
-    \item \textbf{Drehmoment:} Ohne Hebelarm kann kein Drehmoment $\vec{M}$ ausgeübt werden. Mathematisch gilt:
+    \item \textbf{Drehmoment:} Ohne Hebelarm kann kein Drehmoment $\vec{M}$ ausgeübt werden. Mathematisch gilt (da $\vec{r}$ und $\vec{F}$ parallel sind):
     \begin{equation}
         \vec{M} = \vec{r} \times \vec{F} = 0
     \end{equation}
@@ -43,11 +43,15 @@ Die physikalische Ursache des Flächensatzes ist die \textbf{Drehimpulserhaltung
     \begin{equation}
         \vec{L} = m (\vec{r} \times \vec{v}) = \text{konstant}
     \end{equation}
+    Der Drehimpuls des Planeten bleibt also auf der gesamten Bahn unverändert.
     
-    \item \textbf{Flächengeschwindigkeit:} Die überstrichene Flächengeschwindigkeit $\dot{A}$ ist direkt proportional zum Drehimpuls:
+    \item \textbf{Flächengeschwindigkeit:} Geometrisch überstreicht der Fahrstrahl in einem kurzen Zeitintervall $dt$ eine Dreiecksfläche $dA = \frac{1}{2} |\vec{r} \times \vec{v}| dt$. Setzt man hier die Definition des Drehimpulses ein ($|\vec{r} \times \vec{v}| = \frac{|\vec{L}|}{m}$), erhält man für die Flächengeschwindigkeit $\dot{A}$:
     \begin{equation}
         \dot{A} = \frac{dA}{dt} = \frac{|\vec{L}|}{2m} = \text{konstant}
     \end{equation}
 \end{enumerate}
+
+\textbf{Fazit:} Da sowohl der Drehimpuls $L$ als auch die Masse $m$ Erhaltungsgrößen sind, muss die Flächengeschwindigkeit konstant sein. Dies beweist das zweite Keplersche Gesetz.
+\textbf{Fazit:} Da sowohl der Drehimpuls $L$ als auch die Masse $m$ Erhaltungsgrößen sind, muss die Flächengeschwindigkeit konstant sein. Dies beweist das zweite Keplersche Gesetz.
 
 \textbf{Fazit:} Da der Drehimpuls erhalten bleibt, muss der Planet bei kleinerem Abstand $r$ (Sonnennähe) schneller fliegen und bei grösserem Abstand (Sonnenferne) langsamer werden, damit die Flächenrate stets gleich bleibt.
